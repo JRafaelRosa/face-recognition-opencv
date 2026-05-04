@@ -5,7 +5,7 @@ from app.model.vision import recognition
 # url = "http://localhost:8080/registrar"
 
 def main():
-    # train_all()
+    #train()
     person = Person("joao", "teste@test.com", 'estagio')
 
     data = recognition(person)
