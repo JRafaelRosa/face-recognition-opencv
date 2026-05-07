@@ -57,8 +57,24 @@ https://github.com/JRafaelRosa/facial-authentication-api
 │   └── train/          # Modelos treinados (.yml, .pkl)
 └── main.py             # Orquestrador do sistema
 ```
-### 🚀 Como Utilizar
-**Prepare o Dataset:
+
+## 🏗️ Arquitetura
+```
+Camera
+   ↓
+OpenCV + LBPH
+   ↓
+Validação de confiança
+   ↓
+HTTP POST
+   ↓
+API Go
+   ↓
+MySQL
+```
+
+## 🚀 Como Utilizar
+**Preparar o Dataset
 
 Coloque imagens do usuário em:
 ```
@@ -82,12 +98,20 @@ Pressione 'S' durante a execução para capturar frames e atualizar o treinament
 
 Pressione 'Q' para sair.
 
-### 🧠 Objetivo
+## 🧠 Objetivo
 Este projeto tem como foco:
 
 - aprimorar técnicas de visão computacional aplicada
 - estudar reconhecimento facial com LBPH
 - integração de sistemas distribuídos (Python → API Go)
 - otimização de precisão em cenários reais simulados
+
+## 📌 Próximos Passos
+
+- migração para embeddings faciais
+- testes com FaceNet/DeepFace
+- melhoria do pipeline de inferência
+- suporte a múltiplas câmeras
+  
 ---
 Desenvolvido por Joao Rafael dos Santos da Rosa. Focado em otimização de modelos de visão computacional e integração de sistemas distribuídos.
